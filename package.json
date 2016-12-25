@@ -1,0 +1,29 @@
+{
+  "name": "gcp-translator-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc": "tsc --outDir .dest",
+    "tsc:w": "tsc --outDir .dest --watch",
+    "build": "npm run tsc",
+    "build:w": "npm run tsc:w",
+    "start": "nodemon server.ts --exec ts-node"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^4.14.36",
+    "@types/node": "^6.0.40",
+    "concurrently": "^2.2.0",
+    "nodemon": "^1.11.0",
+    "ts-node": "^1.7.0",
+    "typescript": "^2.1.4"
+  },
+  "dependencies": {
+    "@google-cloud/translate": "^0.6.0",
+    "core-js": "^2.4.1",
+    "lodash": "^4.16.1"
+  }
+}
